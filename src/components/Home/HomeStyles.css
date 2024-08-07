@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.intro-container {
+  padding: 8rem;
+  border-radius: 10px;
+  max-width: 45%;
+  padding-bottom: 20%;
+}
+
+.image-container {
+  max-width: 50%;
+  height: 100%;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: rgb(158, 238, 10);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* styling code for the name animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.intro-container h1 {
+  animation: fadeInUp 1s ease-out, shake 2s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  font-size: 3rem;
+}
+
+.intro-container h2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid black;
+  animation: typing 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+  color: rgb(158, 238, 10); 
+}
+
+.intro-container h3 {
+  animation-delay: 2s;
+  animation: moveLeftRight 2s ease-in-out infinite;
+}
+
+.intro-container .cta-button {
+  animation: fadeInUp 1s ease-out;
+}
