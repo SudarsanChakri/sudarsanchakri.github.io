@@ -22,7 +22,7 @@ const SideBar = () => (
       <a href="https://www.linkedin.com/in/sudarsanchakrip/" target="_blank" rel="noopener noreferrer" data-text="LINKEDIN">
         <FaLinkedin title="LinkedIn" />
       </a>
-      <a href="https://github.com/SudarsanChakri/x" target="_blank" rel="noopener noreferrer" data-text="GITHUB">
+      <a href="https://github.com/SudarsanChakri/" target="_blank" rel="noopener noreferrer" data-text="GITHUB">
         <FaGithub title="GitHub" />
       </a>
     
